@@ -16,6 +16,7 @@
 **/OpenOffice/**
 HW/Storage/*
 *.apk
+*.aux
 *.avi
 *.bin
 *.conf
@@ -27,6 +28,7 @@ HW/Storage/*
 *.html
 # !**/dw2pdf/*.html
 *.ico
+*.ins
 *.jpeg
 *.jpg
 *knoppix-autoconfig*
@@ -46,6 +48,7 @@ HW/Storage/*
 *.ps
 *.py
 *.svg
+*.tns
 *.xml
 *.vbs
 *.zip

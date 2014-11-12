@@ -29,7 +29,7 @@ endff="unix"
 # Doubt: further inspection of the files is wanted:
 silentorvim="v"
 if [ -z "$1" ]; then
-	# there was no argument, and odds are still that we're going ahead with the conversion:
+	# there was no argument - odds are that we're going ahead with the conversion:
 	silentorvim="s"
 	# but doubt again if Git's not there - ask:
 	if [ ! -d ".git" ]; then
