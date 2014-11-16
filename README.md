@@ -12,10 +12,12 @@ The script handles some usage edge-cases, and allows for some switches to examin
 I call it like this `$HOME/gsUntr-unix.sh` - accessible from any Git Bash.
 
 ### Requirements
-Windows 7 at least, with Git Bash.
+Windows 7 at least, with Git Bash. (Probably work in GNU/Linux too.)
 
 ### What's caught
 With this kind of output:
+
 ![output of git status -u in a simple case](gsUntr-unix-momentary.png)
-- find files labelled as "Untracked" (and also as "modified" - might as well) with `CRLF` inside, and change them to `LF`.
+
+find files labelled as "Untracked" (and also as "modified" - might as well) with `CRLF` inside, and change them to `LF`.
 
