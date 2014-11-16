@@ -12,7 +12,7 @@ The script handles some usage edge-cases, and allows for some switches to examin
 I call it like this `$HOME/gsUntr-unix.sh` - accessible from any Git Bash.
 
 ### Requirements
-Windows 7 at least, with Git Bash. (Probably work in GNU/Linux too.)
+Windows 7 at least, with Git Bash. (But probably works with any combination of Git & Bash.)
 
 ### What's caught
 With this kind of output:
