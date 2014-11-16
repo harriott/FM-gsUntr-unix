@@ -1,6 +1,8 @@
 #!/bin/bash
 
-# Joseph Harriott http://momentary.eu/ Fri 31 Oct 2014
+# Joseph Harriott
+# http://momentary.eu/2014/11/git-bash-script-to-ensure-lf-before-committing/
+# Last updated: Sun 16 Nov 2014
 
 # Prepare Untracked files for committing to a unix-only Git repository.
 
@@ -17,7 +19,7 @@ tstmptempf="${tstmptempf%.*}-$(date +%Y%m%d%H%M%S).txt"
 if [ -d ".git" ]; then
 	echo "Creating temp list of CRLF'd Git Unstracked's in $tstmptempf :"
 	git status -u | grep "$(echo -ne \\t)" | sed 's#\t\(modified:   \)*##' |
-		xargs -i{} grep -Ul $'\015' {} > $tstmptempf
+		grep -v "deleted:" | xargs -i{} grep -Ul $'\015' {} > $tstmptempf
 		# - that last grep will snag on any U000Ds
 else
 	echo "No Git here, so just grabbing this directory's text files list:"
